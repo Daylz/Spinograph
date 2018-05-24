@@ -1,0 +1,46 @@
+// Tasks for processing and p5
+// only for Windows
+{
+    "version": "0.1.0",
+    "command": "cmd", 
+    "isShellCommand": true,
+    "showOutput": "always",
+    "args": ["/C"],
+    "tasks": 
+    [
+
+        {
+        "taskName": "1. Run p5 script",
+        "suppressTaskName": true,
+        "isBuildCommand": true,
+        "args": 
+            [
+            "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+            "index.html"
+            ]   
+        },
+        {
+            "taskName": "2. Open Processing reference",
+            "suppressTaskName": true,
+            "isBuildCommand": true,
+            "args": 
+                [
+                "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "file:///D:/Programs/processing-3.3.7/modes/java/reference/index.html"
+                ]   
+        },
+        {
+            "taskName": "3. Run processing sketch",
+            "suppressTaskName": true,
+            "isBuildCommand": true,
+            "args": 
+                [
+                "processing-java",
+                "--force",
+                "--sketch=${workspaceRoot}",
+                "--output=${workspaceRoot}\\out",
+                "--run"
+                ]
+        }
+    ]
+}
