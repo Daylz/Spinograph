@@ -66,10 +66,13 @@ function initUI()
 
 function initNodes()
 {
-    for (var i = 0; i < numNodes; ++i)
+    /*for (var i = 0; i < numNodes; ++i)
     {
         nodes[i] = new Node(0, 0, 0, random(10, 100), random(-1, 1)/20);
-    }
+    }*/
+	
+	nodes[0] = new Node(0, 0, 0, 100, 0.009); 
+	nodes[1] = new Node(0, 0, 0, 75, -0.04);
 }
 
 function updateNodes()
