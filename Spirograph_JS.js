@@ -2,13 +2,13 @@ var screenW = 1024;
 var screenH = 1024;
 
 var bgCanvas;
-var bgColor = 175;
+var bgColor = 240;
 
 // Nodes
 var nodes = [];
 var numNodes = 2;
 var minNodes = 1;
-var maxNodes = 1000;
+var maxNodes = 10;
 var drawingNodes = true;
 
 // Drawing
